@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expirement 1</title>
+</head>
+<body>
+
+    <h1>Expirement 1</h1>
+    <h2>Open the console to see how the script works</h2>
+
+    <script>
+
+        // sequence 1 - define a varible
+        var myText = 'Goofy Goober';
+
+        // sequence 2 - define a variable
+        var newString = '';
+
+        // sequence 3 - run a loop
+        for( var i=0; i < myText.length; i++){
+            
+            //sequence 4 - have a selection
+            if(i%2 == 0){
+                newString += myText[i].toUpperCase();
+            }
+            else{
+                newString += myText[i].toLowerCase();
+
+            }
+            
+           
+
+
+        }
+
+        //sequence 5 - final string
+        console.log(newString);
+        
+
+
+    </script>
+    
+</body>
+</html>
