@@ -1,0 +1,84 @@
+img{
+    width: 370px;
+    height: 555px;
+    padding: 40px 45px 40px 45px;
+}
+
+div{
+    max-height: 750px;
+    max-width: 1200px ;
+    
+}
+
+#questions section {
+    flex: 1;
+    padding: 40px;
+}
+main {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#overlay {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 60%;
+    height: 70vh;
+    padding: 40px;
+}
+
+form input, form label {
+    display: block;
+}
+
+form input {
+    margin-bottom: 1em;
+}
+
+span {
+    font-weight: bold;;
+}
+
+/* ai helped me with figuring out the form*/
+form {
+  width: 500px;
+  min-height: 200px;
+  background-color: #3c3838e7;
+  color: white;
+  padding: 40px 45px;
+  margin-top: -10px;
+  margin-right: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 15px);  
+  gap: 5px;
+}
+
+form input[type="submit"] {
+  width: 100%;             
+  margin-top: 10px;
+}
