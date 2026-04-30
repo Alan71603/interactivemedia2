@@ -73,7 +73,7 @@
         }
 
 
-       document.querySelector('#overlay article').innerHTML = myText;
+       document.querySelector('#story').innerHTML = myText;
     });
 
 } )();
