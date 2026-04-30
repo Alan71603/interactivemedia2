@@ -1,19 +1,40 @@
-img{
-    width: 370px;
-    height: 555px;
-    padding: 40px 45px 40px 45px;
+header {
+    text-align: center;
+    padding:40px;
 }
 
-div{
-    max-height: 750px;
-    max-width: 1200px ;
-    
+header h1 {
+  
+  font-size: 2.5em;
+  color: #f0d080;
+  text-shadow: 0 0 15px rgba(240, 208, 128, 0.8),
+    0 0 30px rgba(240, 208, 128, 0.4);
+  letter-spacing: 4px;
+  margin: 0;
 }
+
 
 #questions section {
     flex: 1;
     padding: 40px;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+  background-size: 200px 200px, 150px 150px, cover;
+  background-position: 0 0, 100px 100px, 0 0;
+}
+
+
 main {
     display: flex;
     width: 900px;
@@ -36,6 +57,7 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    color: black;
     background-color: #fff;
     width: 60%;
     height: 70vh;
@@ -58,14 +80,12 @@ span {
 form {
   width: 500px;
   min-height: 200px;
-  background-color: #3c3838e7;
-  color: white;
+  background-color: rgba(15, 15, 50, 0.9);
   padding: 40px 45px;
-  margin-top: -10px;
-  margin-right: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-
+  margin-top: 0;
+  box-shadow: 0 4px 20px rgba(100, 100, 255, 0.3);
+  border: 1px solid rgba(120, 120, 255, 0.2);
+  border-radius: 0 8px 8px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 20px 30px;
@@ -81,4 +101,51 @@ form div {
 form input[type="submit"] {
   width: 100%;             
   margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+#shooting-star {
+  position: fixed;
+  top: 10%;
+  left: -200px;        /* starts off screen to the left */
+  width: 150px;
+  opacity: 0;
+  animation: shoot 4s ease-in infinite;
+  animation-delay: 2s; /* waits before starting */
+  pointer-events: none; /* so it doesn't block clicks */
+  z-index: 0;
+}
+
+@keyframes shoot {
+  0% {
+    left: -200px;
+    top: 10%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 110%;
+    top: 40%;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-height: 750px) {
+    
 }
