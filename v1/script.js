@@ -58,7 +58,7 @@
          document.querySelector('#animal2').focus();
         } 
         else{
-          myText = `As I looked into the starry night sky, I tried to look for the constellation ${constellation}. As I grabbed my ${object} I began to look at the outline of the ${adjective1} stars. I couldn’t believe my eyes, the star patterns create an ${animal1} in the sky. I called out to my friend ${name1} to come check it out. He was a bit annoyed because I interrupted him so he gave me a ${emotion} face. When I point out the constellation he is too stunned to ${verb}. He couldn't believe it either. ${name2} asks what are you calling it? I proudly say, “It’s The ${adjective2} ${animal2}".`;
+          myText = `As I looked into the starry night sky, I tried to look for the constellation ${constellation}. As I grabbed my ${object} I began to look at the outline of the ${adjective1} stars. I couldn’t believe my eyes, the star patterns create an ${animal1} in the sky. I called out to my friend ${name1} to come check it out. They were a bit annoyed because I interrupted them so they gave me a ${emotion} face. When I point out the constellation they are too stunned to ${verb}. They couldn't believe it either. ${name2} asks what are you calling it? I proudly say, “It’s The ${adjective2} ${animal2}".`;
           document.querySelector('#overlay').style.display="block";
           document.querySelector('#constellation').value = '';
           document.querySelector('#object').value = '';
