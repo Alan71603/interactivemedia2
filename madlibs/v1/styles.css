@@ -1,0 +1,184 @@
+header {
+    text-align: center;
+    padding:40px;
+}
+
+h1, h2{
+  
+  font-size: 2.5em;
+  color: #f0d080;
+  text-shadow: 0 0 15px rgba(240, 208, 128, 0.8),
+    0 0 30px rgba(240, 208, 128, 0.4);
+  letter-spacing: 4px;
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-weight: 550;
+  font-style: normal;
+  
+}
+
+img{
+    display: block;
+    max-width: 60%;
+}
+
+
+#questions section {
+    flex: 1;
+    padding: 40px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+  background-size: 200px 200px, 150px 150px, cover;
+  background-position: 0 0, 100px 100px, 0 0;
+}
+
+
+main {
+    display: flex;
+    width: 40%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#overlay {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 20, 0.85);
+
+}
+
+#overlay article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: linear-gradient(135deg, #0d0d2e, #1a1a4e);
+    border: 1px solid rgba(240, 208, 128, 0.4);
+    box-shadow: 0 0 30px rgba(120, 120, 255, 0.4),
+    inset 0 0 30px rgba(0, 0, 40, 0.5);
+    width: 65%;
+    height: 70vh;
+    padding: 40px;
+}
+
+#overlay article a {
+  display: block;
+  text-align: right;
+  color: #f0d080;
+  text-shadow: 0 0 15px rgba(240, 208, 128, 0.8),
+    0 0 30px rgba(240, 208, 128, 0.4);
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding: 12px 0 4px 0;
+}
+
+form input, form label {
+    display: block;
+}
+
+form input {
+    margin-bottom: 1em;
+}
+
+span {
+    font-weight: bold;;
+}
+
+label, p{
+    font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ai helped me with figuring out the form*/
+form {
+  width: 500px;
+  min-height: 200px;
+  background-color: rgba(15, 15, 50, 0.9);
+  padding: 40px 45px;
+  margin-top: 0;
+  box-shadow: 0 4px 20px rgba(100, 100, 255, 0.3);
+  border: 1px solid rgba(120, 120, 255, 0.2);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 15px);  
+  gap: 5px;
+}
+
+form input[type="submit"] {
+  width: 100%;             
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+#shooting-star {
+  position: fixed;
+  top: 10%;
+  left: -200px;        
+  width: 150px;
+  opacity: 0;
+  animation: shoot 4s ease-in infinite;
+  animation-delay: 2s; 
+  pointer-events: none; 
+  z-index: 0;
+}
+
+
+
+@keyframes shoot {
+  0% {
+    left: -200px;
+    top: 10%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 110%;
+    top: 40%;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-height: 750px) {
+    
+}
