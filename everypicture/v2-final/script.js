@@ -23,7 +23,7 @@
     const bubble = document.querySelector('#bubble')
 
     document.querySelector('#manuel').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Manuel says: Congrats bro, you finally did it!';
+    bubble.innerHTML = "Manuel says: Congrats bro, I still don't believe it";
     bubble.style.display = 'block';
     });
 
@@ -32,7 +32,7 @@
     });
 
     document.querySelector('#brandon').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Brandon';
+    bubble.innerHTML = "Brandon says: I'm still waiting for the April Fools";
     bubble.style.display = 'block';
     });
 
@@ -41,7 +41,7 @@
     });
 
     document.querySelector('#jarge').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Jarge';
+    bubble.innerHTML = 'Jarge: So are we still able to hit the hookah?';
     bubble.style.display = 'block';
     });
 
@@ -50,7 +50,7 @@
     });
 
     document.querySelector('#noe').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Noe';
+    bubble.innerHTML = "Noe: Dedicated to Drake, and his wife now too I guess";
     bubble.style.display = 'block';
     });
 
@@ -59,7 +59,7 @@
     });
 
     document.querySelector('#kev-jeff').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Kev-Jeff';
+    bubble.innerHTML = "Kev & Jeff say: Bro is actually getting married";
     bubble.style.display = 'block';
     });
 
@@ -68,7 +68,7 @@
     });
 
     document.querySelector('#me').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Me';
+    bubble.innerHTML = "Chris says: All this for the bit is kinda crazy";
     bubble.style.display = 'block';
     });
 
@@ -77,7 +77,7 @@
     });
 
     document.querySelector('#ivan').addEventListener('pointerenter', function() {
-    bubble.textContent = 'Ivan';
+    bubble.innerHTML = 'Ivan says "ICEMAN WAS A NICE MAN, NOW IM HOT AND COLD"';
     bubble.style.display = 'block';
     });
 

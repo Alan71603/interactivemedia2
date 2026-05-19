@@ -1,40 +1,53 @@
 
 body {
-  background: #f0ede8;
-  color: black;
+  background: #f5f0ea; 
+  color: #3a3028;      
+  font-family: "Cormorant Garamond", serif;
 }
 
 header {
   text-align: center;
-  padding: auto;
+  padding: 20px 20px 0;
+  border-bottom: 1px solid #c9b99a;
+}
+
+footer{
+  text-align: center;
+  padding: 20px 20px 0;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-family: "Imperial Script", cursive;
+  font-size: 4rem;
   font-weight: 300;
   letter-spacing: 0.2em;
 }
 
 header p {
   margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 0.8rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: black;
+  color: #8a7560;
+}
+
+#hoverover p{
+  text-align: center;
+  padding: 20px 20px 20px;
+  color: #8a7560;
+  border-bottom: 1px solid #c9b99a;
 }
 
 :root {
     --sliderwidth: 0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 #one {
   width: 100%;
   overflow-x: hidden;
+  padding-top: 30px;
+
 }
 
 .slider {
@@ -67,7 +80,7 @@ body {
 }
 .hero-image {
   max-width: 750px;
-  margin: 40px auto;
+  margin: 60px auto 40px; 
   padding: 0 24px;
 }
 
@@ -77,8 +90,7 @@ body {
   aspect-ratio: 644 / 380;
 }
 
-.container img,
-.container svg {
+.container img, svg {
   position: absolute;
   inset: 0;        
   width: 100%;
@@ -94,13 +106,17 @@ svg rect {
   display: none;
   position: absolute;
   background: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  pointer-events: none; 
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  white-space: nowrap; 
+  z-index: 10; 
 }
 
 
