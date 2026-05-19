@@ -1,0 +1,80 @@
+
+body {
+  background: #f0ede8;
+  color: black;
+}
+
+header {
+  text-align: center;
+  padding: auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: black;
+}
+
+#one {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    top:0;
+    left: 0;
+    height: 200px;
+}
+
+.slider div img {
+    height: 100%;
+    display: block;
+    margin-right: 20px;
+}
+
+.a, .b {
+   display: flex;
+   height: 100%;
+}
+@keyframes moveSlider {
+    from { left: var(--sliderwidth); }
+    to { left: 0; }
+}
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.hero-image {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-height: 750px) {
+    
+}
