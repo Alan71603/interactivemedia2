@@ -41,7 +41,7 @@
     });
 
     document.querySelector('#jarge').addEventListener('pointerenter', function() {
-    bubble.innerHTML = 'Jarge: So are we still able to hit the hookah?';
+    bubble.innerHTML = 'Jarge says: So are we still able to hit the hookah?';
     bubble.style.display = 'block';
     });
 
@@ -50,7 +50,7 @@
     });
 
     document.querySelector('#noe').addEventListener('pointerenter', function() {
-    bubble.innerHTML = "Noe: Dedicated to Drake, and his wife now too I guess";
+    bubble.innerHTML = "Noe says: Dedicated to Drake, and his wife now too I guess";
     bubble.style.display = 'block';
     });
 
