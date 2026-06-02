@@ -9,22 +9,21 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <div id="gamecontrol">
+    <header id="gamecontrol">
         <h1>Ice Fishing</h1>
         <button id="startgame">Start Game</button>
-    </div>
+    </header>
 
     <div id="screens">
 
        <!--  Player 1 -->
-        <div class="player_screen" id="screen1">
-            <div class="screen_label" id="label1">Player 1</div>
-            <img class="game_img" id="scene1" src="images/redwaiting.png" alt="Player 1 img">
+        <section class="player_screen">
+            <div class="player" id="p1">Player 1</div>
+            <img class="game_img" id="img1" src="images/redwaiting.png" alt="Player 1 img">
             <div class="player_bottom">
                 <div class="player_score" id="p1score">0 fish</div>
             </div>
-        </div>
+        </section>
 
         <!-- Mid Console -->
         <div id="console">
@@ -35,15 +34,19 @@
         </div>
 
         <!-- Player 2 -->
-        <div class="player_screen" id="screen2">
-            <div class="screen_label" id="label2">Player 2</div>
-            <img class="game_img" id="scene2" src="images/bluewaiting.png" alt="Player 2 img">
+        <section class="player_screen">
+            <div class="player" id="p2">Player 2</div>
+            <img class="game_img" id="img2" src="images/bluewaiting.png" alt="Player 2 img">
             <div class="player_bottom">
                 <div class="player_score" id="p2score">0 fish</div>
             </div>
-        </div>
+        </section>
 
     </div>
+
+    <footer>
+        <p>Designed by Chris Rodriguez</p>
+    </footer>
 
 </body>
 </html>
