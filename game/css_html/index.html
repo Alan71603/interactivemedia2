@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Fishing PIG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="gamecontrol">
+        <h1>Ice Fishing</h1>
+        <button id="startgame">Start Game</button>
+    </div>
+
+    <div id="screens">
+
+       <!--  Player 1 -->
+        <div class="player_screen" id="screen1">
+            <div class="screen_label" id="label1">Player 1</div>
+            <img class="game_img" id="scene1" src="images/redwaiting.png" alt="Player 1 img">
+            <div class="player_bottom">
+                <div class="player_score" id="p1score">0 fish</div>
+            </div>
+        </div>
+
+        <!-- Mid Console -->
+        <div id="console">
+            <div id="game"></div>
+            <div id="dicearea"></div>
+            <div id="actions"></div>
+            <div id="score"></div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player_screen" id="screen2">
+            <div class="screen_label" id="label2">Player 2</div>
+            <img class="game_img" id="scene2" src="images/bluewaiting.png" alt="Player 2 img">
+            <div class="player_bottom">
+                <div class="player_score" id="p2score">0 fish</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
