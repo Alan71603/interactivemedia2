@@ -155,7 +155,63 @@ header#gamecontrol {
 @keyframes bounce { 50% { transform: translateY(-10px); } }
 
 @media screen and (max-width: 1200px) {
+    #screens {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        justify-items: center;
+    }
 
+    #console {
+        order: -1;
+        max-width: 280px;
+        padding-top: 0;
+    }
+
+    .player_screen {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header#gamecontrol {
+        padding: 10px 14px;
+        gap: 12px;
+    }
+
+    #gamecontrol h1, h2 {
+        font-size: 20px;
+    }
+
+    #startgame, #quit {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    #screens {
+        padding: 12px 8px;
+        gap: 12px;
+    }
+
+    .player {
+        font-size: 15px;
+    }
+
+    .player_score {
+        font-size: 16px;
+        padding: 5px 14px;
+    }
+
+    #console {
+        min-width: unset;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #dicearea img {
+        width: 44px;
+        height: 44px;
+    }
 }
 
 @media screen and (max-height: 750px) {

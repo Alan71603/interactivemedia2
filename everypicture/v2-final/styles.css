@@ -1,4 +1,3 @@
-
 body {
   background: #f5f0ea; 
   color: #3a3028;      
@@ -129,4 +128,44 @@ svg rect {
 
 @media screen and (max-height: 750px) {
     
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  header p {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+
+  #hoverover p {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+
+  .slider {
+    height: 120px;
+  }
+
+  .slider div img {
+    margin-right: 10px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin: 30px auto 20px;
+    padding: 0 12px;
+  }
+
+  #bubble {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    white-space: normal;
+    max-width: 80%;
+    text-align: center;
+  }
 }
