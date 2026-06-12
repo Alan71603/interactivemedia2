@@ -194,8 +194,61 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (min-width: 600px) {
+main{
+    display: flex;
+}
 
+aside {
+    flex: 1;
+}
+
+.container{
+    flex: 2;
+}
+
+.home{
+    margin:80px;
+}
+
+.content{
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+    border-radius: 8px;
+    padding: 30px 25px;
+  }
+
+  form div {
+    width: 100%;
+  }
+
+  h1, h2 {
+    font-size: 1.6em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #overlay article {
+    width: 90%;
+    height: auto;
+    padding: 25px;
+  }
+
+  header, footer {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-height: 750px) {
